@@ -1,0 +1,24 @@
+{
+      "compilerOptions": {
+        "target": "ES2022", // 目标 JavaScript 版本
+        "module": "NodeNext", // 使用 Node.js 的现代模块系统
+        "moduleResolution": "NodeNext", // 模块解析策略
+        "outDir": "./dist", // 编译输出目录
+        "rootDir": "./", // TypeScript 源文件根目录 (包含 src 和 context7/src)
+        "strict": true, // 启用所有严格类型检查选项
+        "esModuleInterop": true, // 允许从 CommonJS 模块进行默认导入
+        "skipLibCheck": true, // 跳过声明文件的类型检查
+        "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
+        "resolveJsonModule": true, // 允许导入 JSON 文件
+        "declaration": true, // 生成 .d.ts 声明文件 (可选，但有助于库)
+        "sourceMap": true // 生成 Source Map 文件，便于调试
+      },
+      "include": [
+        "src/**/*", // 包含 src 目录下的所有 ts 文件
+        "context7/src/lib/**/*" // 包含 context7 的 lib 目录下的 ts 文件
+      ],
+      "exclude": [
+        "node_modules", // 排除 node_modules
+        "dist" // 排除输出目录
+      ]
+    }
